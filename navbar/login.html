@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+
+<body>
+    <button class="btn1" onclick="login_page_opener()">Login</button>
+    <div id="login_popup">
+        <div class="login_box">
+            <img class="close_icon" onclick="closefn()" src="login_popup_image/Close-icon.png" alt="close icon" >
+            <div class="login_left">
+                <img src="login_popup_image/building.webp" alt="" srcset="">
+            </div>
+            <div class="login_right">
+                <div class="login_top">
+                    <div id="login_head" class="btn2" onclick="func1()">Login</div>
+                    <div id="signup_head" class="btn2" onclick="func2()" style="color: black;border-color: black;">Sign Up</div>
+                </div>
+                <div class="login_bottom">
+                    <div id="login_content">
+                        <div class="login_dialog">Username</div>
+                        <input type="text" placeholder="Username">
+                        <div class="login_dialog">Password</div>
+                        <input type="text" placeholder="Password">
+                        <button class="btn3" onclick="closefn()">Login</button>
+                    </div>
+                    <div id="signup_content" >
+                        <div class="login_dialog">Name</div>
+                        <input type="text" placeholder="Name">
+                        <div class="login_dialog">Email</div>
+                        <input type="text" placeholder="Email">
+                        <div class="login_dialog">Password</div>
+                        <input type="text" placeholder="Password">                                                
+                        <button class="btn3" onclick="closefn()">Signup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('signup_content').style.display='none';
+        // document.getElementById('signup_head').click()
+        document.getElementById('login_popup').style.display='none';
+    </script>
+</body>
+
+</html>

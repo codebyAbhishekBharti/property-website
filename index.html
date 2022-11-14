@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="navbar/only_logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700,800" rel="stylesheet"
+        type="text/css">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homepage.css">
+    <script src="homepage.js"></script>
+    <!-- for navbar -->
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="navbar/login.css">
+    <script src="navbar/login.js"></script>
+    <!-- for homepage cards -->
+    <!-- <link rel="stylesheet" href="block.css"> -->
+    <!-- about us -->
+    <link rel="stylesheet" href="about_us.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="navbar/logo.png" alt="" srcset=""></a>        
+        <div id="navbar_cont1" class="navbar_content" style="margin-left: 25%;" onclick="window.location.href = 'buy_page.html';">Buy</div>
+        <div id="navbar_cont2" class="navbar_content">Rent</div>
+        <div id="navbar_cont3" class="navbar_content" onclick="window.location.href = 'sell_page.html';">Sell</div>
+        <div id="navbar_cont4" class="navbar_content" onclick="window.location.href='contact_us.html'" >Contact Us</div>
+        <div id="navbar_cont5" class="navbar_content" onclick="login_page_opener()">Sign in</div>
+        <div class="navbar_post_property" onclick="window.location.href = 'sell_page.html';" >
+            POST PROPERTY <br>FOR FREE
+        </div>
+        <!-- for opening signin popup -->
+        <div id="login_popup">
+            <div class="login_box">
+                <img class="close_icon" onclick="closefn()" src="navbar/login_popup_image/Close-icon.png"
+                    alt="close icon"
+                    style="float: right;width: 25px;height: 25px;margin-top: -11px;margin-right: -12px;">
+                <div class="login_left">
+                    <img src="navbar/login_popup_image/building.webp" alt="" srcset="">
+                </div>
+                <div class="login_right">
+                    <div class="login_top">
+                        <div id="login_head" class="btn2" onclick="func1()">Login</div>
+                        <div id="signup_head" class="btn2" onclick="func2()" style="color: black;border-color: black;">
+                            Sign Up</div>
+                    </div>
+                    <div class="login_bottom">
+                        <div id="login_content">
+                            <div class="login_dialog">Username</div>
+                            <input type="text" placeholder="Username">
+                            <div class="login_dialog">Password</div>
+                            <input type="text" placeholder="Password">
+                            <button class="btn3" onclick="closefn()">Login</button>
+                        </div>
+                        <div id="signup_content">
+                            <div class="login_dialog">Name</div>
+                            <input type="text" placeholder="Name">
+                            <div class="login_dialog">Email</div>
+                            <input type="text" placeholder="Email">
+                            <div class="login_dialog">Password</div>
+                            <input type="text" placeholder="Password">
+                            <button class="btn3" onclick="closefn()">Signup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content_main">
+        <!-- <img src="/homepage/homepage_image/los-angeles-traffic-city-night-wallpaper.jpg" alt="" srcset=""> -->
+        <!-- <img src="/homepage/homepage_image/building3.jpg" alt="" srcset=""> -->
+        <div class="content_main_image"></div>
+        <div class="content_search_box">
+            <div class="search_up">
+                <div id="search_id1" class="search_categories" onclick="func17()" style="margin-left: 40px;">Buy </div>
+                <div id="search_id2" class="search_categories" onclick="func18()">Rent</div>
+                <div id="search_id3" class="search_categories" onclick="func19()">PG/Co-living</div>
+                <div id="search_id4" class="search_categories" onclick="func20()">Apartment</div>
+                <div id="search_id5" class="search_categories" onclick="func21()">Commercial</div>
+                <div id="search_id6" class="search_categories" onclick="func22()">Plot/Land</div>
+                <div id="search_id7" class="search_categories" onclick="func23()">Post property</div>
+            </div>
+            <div class="search_down">
+                <div class="location">
+                    <img src="homepage_image/location.png" alt="" srcset="">
+                    <input id="id12" type="text" placeholder="Location">
+                </div>
+                <div class="flat_type">
+                    <img src="homepage_image/home.png" alt="" srcset="">
+                    <input id="id13" type="text" placeholder="Flat">
+                </div>
+                <div class="budget">
+                    <img src="homepage_image/rupee.png" alt="" srcset="">
+                    <input id="id13" type="text" placeholder="Budget">
+                </div>
+                <div class="search">
+                    <div class="search_box">
+                        <img src="homepage_image/search.png" alt="" srcset="">
+                        Search
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_properties">
+        <section>
+            <div class="firstline" style="margin-left: 1%;">Lets find your dream home</div>
+            <div class="selected_card">
+                <div class="selected_flat">
+                    <div class="selected_flat_up">
+                        <img src="product_image/building1.jpg" alt="" srcset="">
+                    </div>
+                    <div class="selected_flat_down">
+                        <p class="selected_price">30 Lac/-</p>
+                        <p class="selected_house">Build Wick Corner Home</p>
+                        <p class="selected_location">in Bhagalpur,Bihar <br>2BHK </p>
+                    </div>
+                </div>
+                <div class="selected_flat">
+                    <div class="selected_flat_up">
+                        <img src="product_image/building2jpg" alt="" srcset="">
+                    </div>
+                    <div class="selected_flat_down">
+                        <p class="selected_price">30 Lac/-</p>
+                        <p class="selected_house">Build Wick Corner Home</p>
+                        <p class="selected_location">in Bhagalpur,Bihar <br>2BHK </p>
+                    </div>
+                </div>
+                <div class="selected_flat">
+                    <div class="selected_flat_up">
+                        <img src="product_image/building3jpg" alt="" srcset="">
+                    </div>
+                    <div class="selected_flat_down">
+                        <p class="selected_price">30 Lac/-</p>
+                        <p class="selected_house">Build Wick Corner Home</p>
+                        <p class="selected_location">in Bhagalpur,Bihar <br>2BHK </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="cont">
+            <div class="cont1" style="background-color: red;" ></div>
+            <div class="cont1" style="background-color: yellow;" ></div>
+            <div class="cont1" style="background-color: blue;" ></div>
+            <div class="cont1" style="background-color: green;" ></div>
+        </div> -->
+        <div class="firstline">Recent Project</div>
+        <div class="properties">
+            <div class="card">
+                <div class="product_image">
+                    <img src="product_image/top-project1.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <div class="card_content">
+                        by Realty Guru<br>
+                        Defence Colony,New Delhi <br><br>
+                        3.4 BHK Flats <br>
+                        <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
+                            5.50 Cr </font>onwards
+                        Marketed by Dream Homes<br>
+                        <button class="view_flat_button">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product_image">
+                    <img src="product_image/index.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <div class="card_content">
+                        by Realty Guru<br>
+                        Defence Colony,New Delhi <br><br>
+                        3.4 BHK Flats <br>
+                        <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
+                            5.50 Cr </font>onwards
+                        Marketed by Dream Homes<br>
+                        <button class="view_flat_button">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product_image">
+                    <img src="product_image/top-project1.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <div class="card_content">
+                        by Realty Guru<br>
+                        Defence Colony,New Delhi <br><br>
+                        3.4 BHK Flats <br>
+                        <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
+                            5.50 Cr </font>onwards
+                        Marketed by Dream Homes<br>
+                        <button class="view_flat_button">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product_image">
+                    <img src="product_image/top-project1.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <div class="card_content">
+                        by Realty Guru<br>
+                        Defence Colony,New Delhi <br><br>
+                        3.4 BHK Flats <br>
+                        <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
+                            5.50 Cr </font>onwards
+                        Marketed by Dream Homes<br>
+                        <button class="view_flat_button">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="firstline">Top Project</div>
+        <div class="properties">
+            <div class="card">
+                <div class="product_image">
+                    <img src="product_image/top-project1.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <div class="card_content">
+                        by Realty Guru<br>
+                        Defence Colony,New Delhi <br><br>
+                        3.4 BHK Flats <br>
+                        <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
+                            5.50 Cr </font>onwards
+                        Marketed by Dream Homes<br>
+                        <button class="view_flat_button">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product_image">
+                    <img src="product_image/index.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <div class="card_content">
+                        by Realty Guru<br>
+                        Defence Colony,New Delhi <br><br>
+                        3.4 BHK Flats <br>
+                        <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
+                            5.50 Cr </font>onwards
+                        Marketed by Dream Homes<br>
+                        <button class="view_flat_button">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product_image">
+                    <img src="product_image/top-project1.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <div class="card_content">
+                        by Realty Guru<br>
+                        Defence Colony,New Delhi <br><br>
+                        3.4 BHK Flats <br>
+                        <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
+                            5.50 Cr </font>onwards
+                        Marketed by Dream Homes<br>
+                        <button class="view_flat_button">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product_image">
+                    <img src="product_image/top-project1.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <div class="card_content">
+                        by Realty Guru<br>
+                        Defence Colony,New Delhi <br><br>
+                        3.4 BHK Flats <br>
+                        <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
+                            5.50 Cr </font>onwards
+                        Marketed by Dream Homes<br>
+                        <button class="view_flat_button">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="firstline">Treading in New Delhi</div>
+        <div class="properties">
+            <div class="card">
+                <div class="product_image">
+                    <img src="product_image/top-project1.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <div class="card_content">
+                        by Realty Guru<br>
+                        Defence Colony,New Delhi <br><br>
+                        3.4 BHK Flats <br>
+                        <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
+                            5.50 Cr </font>onwards
+                        Marketed by Dream Homes<br>
+                        <button class="view_flat_button">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product_image">
+                    <img src="product_image/top-project1.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <div class="card_content">
+                        by Realty Guru<br>
+                        Defence Colony,New Delhi <br><br>
+                        3.4 BHK Flats <br>
+                        <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
+                            5.50 Cr </font>onwards
+                        Marketed by Dream Homes<br>
+                        <button class="view_flat_button">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product_image">
+                    <img src="product_image/top-project1.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <div class="card_content">
+                        by Realty Guru<br>
+                        Defence Colony,New Delhi <br><br>
+                        3.4 BHK Flats <br>
+                        <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
+                            5.50 Cr </font>onwards
+                        Marketed by Dream Homes<br>
+                        <button class="view_flat_button">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product_image">
+                    <img src="product_image/top-project1.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <div class="card_content">
+                        by Realty Guru<br>
+                        Defence Colony,New Delhi <br><br>
+                        3.4 BHK Flats <br>
+                        <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
+                            5.50 Cr </font>onwards
+                        Marketed by Dream Homes<br>
+                        <button class="view_flat_button">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- payrent vastu hospital electricity -->
+        <div class="services_block">
+            <div class="firstline">Services</div>
+            <div class="properties">
+                <div class="card">
+                    <div class="product_image">
+                        <img src="homepage_image/payment_image.jpg" alt="picture 1">
+                        <h3 class="line1">Payment</h3>
+                        <div class="card_content">
+                            Pay your rent easily and safely from owr website<br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product_image">
+                        <img src="product_image/vastu.jpg" alt="picture 1">
+                        <h3 class="line1">Vastu</h3>
+                        <div class="card_content">
+                            You can also contact with owr vastu advisor without and issue<br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product_image">
+                        <img src="product_image/hospital.jpeg" alt="picture 1">
+                        <h3 class="line1">Hospital</h3>
+                        <div class="card_content">
+                            All owr properties are very close to hospitals<br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="product_image">
+                        <img src="product_image/electricity.png" alt="picture 1">
+                        <h3 class="line1">Electricity</h3>
+                        <div class="card_content">
+                            Pay your electricity bill on time<br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="add">
+            <div class="add_left">
+                adfadf
+            </div>
+            <div class="add_right">
+                <img src="product_image/add_sale_add.jpg" alt="">
+            </div>
+        </div> -->
+        <div class="firstline">Find your Property in preferred city</div>
+        <div class="city_list">
+            <div class="city1" style="margin-left: 20px;">
+                <img src="product_image/delhi.webp" alt="" width="50%" height="100%">
+                <div class="city1_text">
+                    Delhi/NCR
+                    <div class="cit1_text_lower">
+                        180000+ flats
+                    </div>
+                </div>
+            </div>
+            <div class="city1">
+                <img src="product_image/mumbai.jpg" alt="" width="50%" height="100%">
+                <div class="city1_text">
+                    Mumbai
+                    <div class="cit1_text_lower">
+                        180000+ flats
+                    </div>
+                </div>                
+            </div>
+            <div class="city1">
+                <img src="product_image/pune.jpg" alt="" width="50%" height="100%">
+                <div class="city1_text">
+                    Pune
+                    <div class="cit1_text_lower">
+                        180000+ flats
+                    </div>
+                </div>                
+            </div>
+            <div class="city1">
+                <img src="product_image/chennai.webp" alt="" width="50%" height="100%">
+                <div class="city1_text">
+                    Chennai
+                    <div class="cit1_text_lower">
+                        180000+ flats
+                    </div>
+                </div>                
+            </div>
+            <div class="city1" style="margin-left: 20px;">
+                <img src="product_image/hydrabad.webp" alt="" width="50%" height="100%">
+                <div class="city1_text">
+                    Hydrabad
+                    <div class="cit1_text_lower">
+                        180000+ flats
+                    </div>
+                </div>                
+            </div>
+            <div class="city1">
+                <img src="product_image/Kolkata.jpg" alt="" width="50%" height="100%">
+                <div class="city1_text">
+                    Kolkata
+                    <div class="cit1_text_lower">
+                        180000+ flats
+                    </div>
+                </div>                
+            </div>
+            <div class="city1">
+                <img src="product_image/patna.jpg" alt="" width="50%" height="100%">
+                <div class="city1_text">
+                    Patna
+                    <div class="cit1_text_lower">
+                        180000+ flats
+                    </div>
+                </div>                
+            </div>
+            <div class="city1">
+                <img src="product_image/aayodhya.jpg" alt="" width="50%" height="100%">
+                <div class="city1_text">
+                    Ayodhya
+                    <div class="cit1_text_lower">
+                        180000+ flats
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- about section -->
+    <div class="about_us">
+        <div class="about_us_left">
+            <img src="about_us_image/logo.png" alt="" srcset="">
+            <div class="about_us_left_content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam animi voluptas, optio, assumenda
+                praesentium laudantium nostrum minima fugiat doloremque culpa nobis labore eligendi debitis quos
+                possimus iusto sint nisi quia. Dolore aut quo laborum laudantium unde, modi ex quod explicabo totam
+                dolorem inventore, mollitia iusto! Earum aliquid architecto ipsam non minima facilis error ipsum sed
+                cum! Molestias, libero saepe non animi nemo porro est in atque fugit temporibus perspiciatis similique
+                tenetur, odit expedita perferendis omnis ducimus illo. Nemo, saepe nobis.
+            </div>
+        </div>
+        <div class="about_us_middle">
+            <div class="about_us_head1">
+                Quick Links
+            </div>
+            <a class="about_us_middle_a" href="http://" target="_blank" rel="noopener noreferrer"
+                style="padding-top: 12px;">About Us</a>
+            <a class="about_us_middle_a" href="http://" target="_blank" rel="noopener noreferrer">Contact Us</a>
+            <a class="about_us_middle_a" href="http://" target="_blank" rel="noopener noreferrer">Home Loan</a>
+            <a class="about_us_middle_a" href="http://" target="_blank" rel="noopener noreferrer">International</a>
+            <a class="about_us_middle_a" href="http://" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        </div>
+        <div class="about_us_right">
+            <div class="about_us_head1">
+                Contact Us
+            </div>
+            <div class="about_us_head2">
+                Toll Free
+            </div>
+            <div class="about_us_content1">
+                1800 3000 0123
+            </div>
+            <div class="about_us_head2" style="margin-top: 7px;">
+                Email Address
+            </div>
+            <div class="about_us_content1">
+                contact.us@lovelyhomes.com
+            </div>
+            <div class="about_us_head2" style="margin-top: 7px;">
+                <div class="about_us_content2">
+                    Follow Us On
+                </div>
+                <div class="contact_image_link">
+                    <a href="https://www.linkedin.com/in/abhishek-bharti-dev/" target="_blank">
+                        <img src="about_us_image/facebook.png" alt="" srcset="" style="margin-left: 30px;">
+                    </a>
+                    <a href="https://twitter.com/abhishek9369701" target="_blank">
+                        <img src="about_us_image/twitter.png" alt="" srcset="">
+                    </a>
+                    <a href="http://www.linkedin.com/in/abhishek-bharti-dev/" target="_blank">
+                        <img src="about_us_image/linkedin.png" alt="" srcset="">
+                    </a>
+                    <a href="https://www.instagram.com/abhishekbharti.dev/" target="_blank">
+                        <img src="about_us_image/instagram.png" alt="" srcset="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // for navbar
+        document.getElementById('signup_content').style.display = 'none';
+        // document.getElementById('signup_head').click()
+        document.getElementById('login_popup').style.display = 'none';
+    </script>
+    <script>
+        document.getElementById('search_id1').style.color = '#d8232a'
+        document.getElementById('search_id1').style.fontFamily = 'Open Sans'
+        document.getElementById('search_id1').style.borderColor = '#d8232a'
+        document.getElementById('search_id1').style.fontWeight = '700'
+    </script>
+</body>
+
+</html>

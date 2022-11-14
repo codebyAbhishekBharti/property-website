@@ -1,0 +1,73 @@
+.properties {
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.card {
+    float: left;
+    width: 295px;
+    border: 1px solid rgb(224, 202, 202);
+    border-radius: 10px;
+    /* padding-left: 10px; */
+    padding-right: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.firstline {
+    color: black;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 8%;
+    padding-left: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+
+.product_image {
+    /* width: 295px; */
+
+    /* color: aqua; */
+}
+
+.line1 {
+    /* padding: 5px; */
+    margin-left: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    /* text-align: center;
+    font-weight: bold; */
+    margin-bottom: 0px;
+}
+
+.card_content {
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 20px;
+    font-size: 15px;
+    color: rgb(147, 133, 133);
+
+}
+
+.view_flat_button {
+    margin-top: 10px;
+    /* padding: 15px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: red;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+.product_image img {
+    width: 305px;
+    height: 180px;
+    object-fit: cover;
+}

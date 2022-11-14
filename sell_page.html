@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,400,600,800" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="navbar/only_logo.png" type="image/x-icon">
+    <title>Sell Page</title>
+    <link rel="stylesheet" href="sell_page.css">
+    <script src="sell_page.js"></script>
+    <!-- for navbar -->
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="navbar/login.css">
+    <script src="navbar/login.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html"><img src="navbar/logo.png" alt="" srcset=""></a>
+        <div id="navbar_cont1" class="navbar_content" style="margin-left: 25%;" onclick="window.location.href = 'buy_page.html';">Buy</div>
+        <div id="navbar_cont2" class="navbar_content">Rent</div>
+        <div id="navbar_cont3" class="navbar_content" onclick="window.location.href = 'sell_page.html';">Sell</div>
+        <div id="navbar_cont4" class="navbar_content" onclick="window.location.href='contact_us.html'" >Contact Us</div>
+        <div id="navbar_cont5" class="navbar_content" onclick="login_page_opener()">Sign in</div>
+        <div class="navbar_post_property" onclick="window.location.href = 'sell_page.html';">
+            POST PROPERTY <br>FOR FREE
+        </div>
+        <!-- for opening signin popup -->
+        <div id="login_popup">
+            <div class="login_box">
+                <img class="close_icon" onclick="closefn()" src="navbar/login_popup_image/Close-icon.png"
+                    alt="close icon" style="float: right;width: 25px;height: 25px;margin-top: -11px;margin-right: -12px;">
+                <div class="login_left">
+                    <img src="navbar/login_popup_image/building.webp" alt="" srcset="">
+                </div>
+                <div class="login_right">
+                    <div class="login_top">
+                        <div id="login_head" class="btn2" onclick="func1()">Login</div>
+                        <div id="signup_head" class="btn2" onclick="func2()" style="color: black;border-color: black;">Sign Up</div>
+                    </div>
+                    <div class="login_bottom">
+                        <div id="login_content">
+                            <div class="login_dialog">Username</div>
+                            <input type="text" placeholder="Username">
+                            <div class="login_dialog">Password</div>
+                            <input type="text" placeholder="Password">
+                            <button class="btn3" onclick="closefn()">Login</button>
+                        </div>
+                        <div id="signup_content" >
+                            <div class="login_dialog">Name</div>
+                            <input type="text" placeholder="Name">
+                            <div class="login_dialog">Email</div>
+                            <input type="text" placeholder="Email">
+                            <div class="login_dialog">Password</div>
+                            <input type="text" placeholder="Password">                                                
+                            <button class="btn3" onclick="closefn()">Signup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sell_page">
+        <div class="sell_sec_1">
+            <p class="heading_1">Sell or Rent Your<br> Property on Lovely Homes</p>
+            <img src="sell_page_image/building_2.webp" alt="" srcset="">
+        </div>
+        <div class="sell_sec_2">
+            <div class="sec_2_container">
+                <p class="cont1">Post Your Property Here</p>
+                <p class="cont2">You are here to </p>
+                <p id="id1" class="cont3" onclick="func4()">Sell</p>
+                <p id="id2" class="cont3" onclick="func5()">Rent</p>
+                <p id="id3" class="cont3" onclick="func6()">PG</p>
+                <p class="cont2">Type of building </p>
+                <div class="cont4">
+                    <p id="id4" class="cont3" onclick="func7()">Residential</p>
+                    <p id="id5" class="cont3" onclick="func8()">Commericial</p>
+                    <p id="id6" class="cont3" onclick="func9()">Apartment</p>
+                    <p id="id7" class="cont3" onclick="func10()">Villa</p>
+                    <p id="id8" class="cont3" onclick="func11()">Builder</p>
+                    <p id="id9" class="cont3" onclick="func12()">Plot</p>
+                    <p id="id10" class="cont3" onclick="func13()">Farm House</p>
+                    <p id="id11" class="cont3" onclick="func14()">Other types</p>
+                </div>
+                <p class="cont2">Location of building </p>
+                <input class="loc1" type="text" placeholder="Location">
+                <p class="cont2">Your Contact Number</p>
+                <input class="loc1" type="text" placeholder="Contact Number">
+                <button id="sell_submit">Post Property Now</button>
+            </div>
+        </div>
+        <div class="how_it_works">
+            <div class="heading2">
+                How it works
+            </div>
+            <div class="part1">
+                <img src="sell_page_image/advertising.png" alt="" srcset="">
+                <div class="heading3">
+                    Publish Your Property Add
+                </div>
+                <div class="heading4">
+                    Publishing your property online gains the lot of public attention towards the property as compared
+                    the regular method of seeling property
+                </div>
+            </div>
+            <div class="part1">
+                <img src="sell_page_image/chat_sending_receiving.png" alt="" srcset="">
+                <div class="heading3">
+                    Get in touch & Check the response
+                </div>
+                <div class="heading4">
+                    You can check message of the customer from any place of world and get the customer across the world.
+                    You can chat with them if your customer want to see the site you can fix the meeting
+                </div>
+            </div>
+            <div class="part1">
+                <img src="sell_page_image/meeting_coat.png" alt="" srcset="">
+                <div class="heading3">
+                    Close the property deal
+                </div>
+                <div class="heading4">
+                    As planed customer will to see your property you can just close the deal fast and quickly then the
+                    regular method
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about_us">
+        <div class="about_us_left">
+            <img src="about_us_image/logo.png" alt="" srcset="">
+            <div class="about_us_left_content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam animi voluptas, optio, assumenda
+                praesentium laudantium nostrum minima fugiat doloremque culpa nobis labore eligendi debitis quos
+                possimus iusto sint nisi quia. Dolore aut quo laborum laudantium unde, modi ex quod explicabo totam
+                dolorem inventore, mollitia iusto! Earum aliquid architecto ipsam non minima facilis error ipsum sed
+                cum! Molestias, libero saepe non animi nemo porro est in atque fugit temporibus perspiciatis similique
+                tenetur, odit expedita perferendis omnis ducimus illo. Nemo, saepe nobis.
+            </div>
+        </div>
+        <div class="about_us_middle">
+            <div class="about_us_head1">
+                Quick Links
+            </div>
+            <a class="about_us_middle_a" href="http://" target="_blank" rel="noopener noreferrer"
+                style="padding-top: 12px;">About Us</a>
+            <a class="about_us_middle_a" href="http://" target="_blank" rel="noopener noreferrer">Contact Us</a>
+            <a class="about_us_middle_a" href="http://" target="_blank" rel="noopener noreferrer">Home Loan</a>
+            <a class="about_us_middle_a" href="http://" target="_blank" rel="noopener noreferrer">International</a>
+            <a class="about_us_middle_a" href="http://" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        </div>
+        <div class="about_us_right">
+            <div class="about_us_head1">
+                Contact Us
+            </div>
+            <div class="about_us_head2">
+                Toll Free
+            </div>
+            <div class="about_us_content1">
+                1800 3000 0123
+            </div>
+            <div class="about_us_head2" style="margin-top: 7px;">
+                Email Address
+            </div>
+            <div class="about_us_content1">
+                contact.us@lovelyhomes.com
+            </div>
+            <div class="about_us_head2" style="margin-top: 7px;">
+                <div class="about_us_content2">
+                    Follow Us On
+                </div>
+                <div class="contact_image_link">
+                    <a href="https://www.linkedin.com/in/abhishek-bharti-dev/" target="_blank">
+                        <img src="about_us_image/facebook.png" alt="" srcset="" style="margin-left: 30px;">
+                    </a>
+                    <a href="https://twitter.com/abhishek9369701" target="_blank">
+                        <img src="about_us_image/twitter.png" alt="" srcset="">
+                    </a>
+                    <a href="http://www.linkedin.com/in/abhishek-bharti-dev/" target="_blank">
+                        <img src="about_us_image/linkedin.png" alt="" srcset="">
+                    </a>
+                    <a href="https://www.instagram.com/abhishekbharti.dev/" target="_blank">
+                        <img src="about_us_image/instagram.png" alt="" srcset="">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // for navbar
+        document.getElementById('signup_content').style.display = 'none';
+        // document.getElementById('signup_head').click()
+        document.getElementById('login_popup').style.display = 'none';
+    </script>
+    <script>
+        document.getElementById('id1').style.backgroundColor = '#d8232a'
+        document.getElementById('id1').style.color = '#ffff'
+
+        document.getElementById('id4').style.backgroundColor = '#d8232a'
+        document.getElementById('id4').style.color = '#ffff'
+    </script>
+</body>
+
+</html>

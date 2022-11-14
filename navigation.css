@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    background-color: #d8232a;
+    height: 70px;
+    padding-left: 10%;
+    /* padding-right: 10%; */
+}
+
+.navbar img {
+    /* here is the chane */
+    /* background-color: #d8232a; */
+    float: left;
+    margin-top: 10px;
+    height: 50px;
+}
+
+.navbar_content {
+    float: left;
+    margin-top: 25px;
+    color: white;
+    /* here is the chane */
+    /* background-color: #d8232a;    */
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bolder;
+}
+
+.navbar_content:hover {
+    transition: all .2s ease;
+    border: 1px solid black;
+    color: #d8232a;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#navbar_cont1:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#navbar_cont2:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#navbar_cont3:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar_post_property {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
+    float: left;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #d8232a;
+    text-align: center;
+}
+
+.navbar_post_property:hover {
+    box-shadow: 5px 5px 10px rgb(219, 208, 208);
+}
