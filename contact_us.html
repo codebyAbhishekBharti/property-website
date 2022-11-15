@@ -47,22 +47,29 @@
                             Sign Up</div>
                     </div>
                     <div class="login_bottom">
-                        <div id="login_content">
-                            <div class="login_dialog">Username</div>
-                            <input type="text" placeholder="Username">
-                            <div class="login_dialog">Password</div>
-                            <input type="text" placeholder="Password">
-                            <button class="btn3" onclick="closefn()">Login</button>
-                        </div>
-                        <div id="signup_content">
-                            <div class="login_dialog">Name</div>
-                            <input type="text" placeholder="Name">
-                            <div class="login_dialog">Email</div>
-                            <input type="text" placeholder="Email">
-                            <div class="login_dialog">Password</div>
-                            <input type="text" placeholder="Password">
-                            <button class="btn3" onclick="closefn()">Signup</button>
-                        </div>
+                        <form id="login_content">
+                            <!-- <div class="login_dialog">Username</div> -->
+                            <label class="login_dialog" for="username">Username</label>
+                            <input type="text" name="username" id="username" placeholder="Username">
+                            <!-- <div class="login_dialog">Password</div> -->
+                            <label class="login_dialog" for="passid">Password</label>
+                            <input type="text" name="password" id="passid" placeholder="Password">
+                            <!-- <button class="btn3" onclick="closefn()">Login</button> -->
+                            <input class="btn3" onclick="closefn()" type="submit" value="Login">
+                        </form>
+                        <form id="signup_content">
+                            <!-- <div class="login_dialog">Name</div> -->
+                            <label class="login_dialog" for="nameid">Name</label>
+                            <input type="text" name="myname" id="nameid" placeholder="Name">
+                            <!-- <div class="login_dialog">Email</div> -->
+                            <label class="login_dialog" for="emailid">Email</label>
+                            <input type="text" name="email_id" id="emailid" placeholder="Email">
+                            <!-- <div class="login_dialog">Password</div> -->
+                            <label class="login_dialog" for="pass">Password</label>
+                            <input type="text" name="pass" id="pass" placeholder="Password">
+                            <!-- <button class="btn3" onclick="closefn()">Signup</button> -->
+                            <input class="btn3" onclick="closefn()" type="submit" value="Signup">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -73,16 +80,18 @@
     </div>
     <div class="contact_us_main_box_upper">
         <div class="contact_us_main_left">
-            <div class="contact_block_main">
+            <form class="contact_block_main">
                 <div class="contact_us_title">Contact Us</div>
-                <input class="contact_us_input" type="text" placeholder="Name">
-                <input class="contact_us_input" type="text" placeholder="Email Id">
-                <input class="contact_us_input" type="text" placeholder="Phone Number">
-                <input class="contact_us_input" type="text" placeholder="City">
+                <input class="contact_us_input" type="text" name="name" placeholder="Name">
+                <input class="contact_us_input" type="email" name="email" placeholder="Email Id">
+                <input class="contact_us_input" type="text" name="phone_no" placeholder="Phone Number">
+                <input class="contact_us_input" type="text" name="city" placeholder="City">
                 <input class="contact_us_input" type="text" placeholder="I Am (seller,Buyer,Builder)">
+                <!-- <textarea class="message_box" name="mytext" cols="42" rows="10"  placeholder="Message" ></textarea> -->
                 <input class="contact_us_input" type="text" placeholder="Message">
-                <div class="call_button">Get Call Back</div>
-            </div>
+                <input class="call_button" type="submit" value="Get Call Back">
+                <!-- <div class="call_button">Get Call Back</div> -->
+            </form>
         </div>
         <div class="contact_us_main_right">
             <div class="contact_image">
