@@ -5,7 +5,7 @@
 
 .content_up_image {
     /* background-image: url(/homepage/contact_us_image/dotted_crop.jpeg); */
-    background-image: url(contact_us_image/testing_dotted.png);
+    background-image: url(/contact_us_image/testing_dotted.png);
     height: 500px;
     width: 100%;
 }
