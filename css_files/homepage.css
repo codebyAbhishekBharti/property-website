@@ -1,6 +1,6 @@
 /* how home page main content start */
 .content_main_image {
-    background: url('homepage_image/los-angeles-traffic-city-night-wallpaper.jpg') no-repeat center /cover;
+    background: url('/homepage_image/los-angeles-traffic-city-night-wallpaper.jpg') no-repeat center /cover;
     width: 100%;
     height: 270px;
     display: flex;
@@ -32,8 +32,7 @@
 .search_categories {
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
-    font-size: 16
-    color: black;
+    font-size: 16;
     /* color: #d96c70; */
     height: 30px;
     margin-top: 25px;

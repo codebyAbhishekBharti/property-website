@@ -10,27 +10,28 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700,800" rel="stylesheet"
         type="text/css">
     <title>Home Page</title>
-    <link rel="stylesheet" href="homepage.css">
-    <script src="homepage.js"></script>
+    <link rel="stylesheet" href="css_files/homepage.css">
+    <script src="js_files/homepage.js"></script>
     <!-- for navbar -->
-    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="css_files/navigation.css">
     <link rel="stylesheet" href="navbar/login.css">
     <script src="navbar/login.js"></script>
     <!-- for homepage cards -->
     <!-- <link rel="stylesheet" href="block.css"> -->
     <!-- about us -->
-    <link rel="stylesheet" href="about_us.css">
+    <link rel="stylesheet" href="css_files/about_us.css">
 </head>
 
 <body>
     <div class="navbar">
-        <a href="index.html"><img src="navbar/logo.png" alt="" srcset=""></a>        
-        <div id="navbar_cont1" class="navbar_content" style="margin-left: 25%;" onclick="window.location.href = 'buy_page.html';">Buy</div>
+        <a href="index.html"><img src="navbar/logo.png" alt="" srcset=""></a>
+        <div id="navbar_cont1" class="navbar_content" style="margin-left: 25%;"
+            onclick="window.location.href = 'buy_page.html';">Buy</div>
         <div id="navbar_cont2" class="navbar_content">Rent</div>
         <div id="navbar_cont3" class="navbar_content" onclick="window.location.href = 'sell_page.html';">Sell</div>
-        <div id="navbar_cont4" class="navbar_content" onclick="window.location.href='contact_us.html'" >Contact Us</div>
+        <div id="navbar_cont4" class="navbar_content" onclick="window.location.href='contact_us.html'">Contact Us</div>
         <div id="navbar_cont5" class="navbar_content" onclick="login_page_opener()">Sign in</div>
-        <div class="navbar_post_property" onclick="window.location.href = 'sell_page.html';" >
+        <div class="navbar_post_property" onclick="window.location.href = 'sell_page.html';">
             POST PROPERTY <br>FOR FREE
         </div>
         <!-- for opening signin popup -->
@@ -49,22 +50,29 @@
                             Sign Up</div>
                     </div>
                     <div class="login_bottom">
-                        <div id="login_content">
-                            <div class="login_dialog">Username</div>
-                            <input type="text" placeholder="Username">
-                            <div class="login_dialog">Password</div>
-                            <input type="text" placeholder="Password">
-                            <button class="btn3" onclick="closefn()">Login</button>
-                        </div>
-                        <div id="signup_content">
-                            <div class="login_dialog">Name</div>
-                            <input type="text" placeholder="Name">
-                            <div class="login_dialog">Email</div>
-                            <input type="text" placeholder="Email">
-                            <div class="login_dialog">Password</div>
-                            <input type="text" placeholder="Password">
-                            <button class="btn3" onclick="closefn()">Signup</button>
-                        </div>
+                        <form id="login_content">
+                            <!-- <div class="login_dialog">Username</div> -->
+                            <label class="login_dialog" for="username">Username</label>
+                            <input type="text" name="username" id="username" placeholder="Username">
+                            <!-- <div class="login_dialog">Password</div> -->
+                            <label class="login_dialog" for="passid">Password</label>
+                            <input type="text" name="password" id="passid" placeholder="Password">
+                            <!-- <button class="btn3" onclick="closefn()">Login</button> -->
+                            <input class="btn3" onclick="closefn()" type="submit" value="Login">
+                        </form>
+                        <form id="signup_content">
+                            <!-- <div class="login_dialog">Name</div> -->
+                            <label class="login_dialog" for="nameid">Name</label>
+                            <input type="text" name="myname" id="nameid" placeholder="Name">
+                            <!-- <div class="login_dialog">Email</div> -->
+                            <label class="login_dialog" for="emailid">Email</label>
+                            <input type="text" name="email_id" id="emailid" placeholder="Email">
+                            <!-- <div class="login_dialog">Password</div> -->
+                            <label class="login_dialog" for="pass">Password</label>
+                            <input type="text" name="pass" id="pass" placeholder="Password">
+                            <!-- <button class="btn3" onclick="closefn()">Signup</button> -->
+                            <input class="btn3" onclick="closefn()" type="submit" value="Signup">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -153,60 +161,60 @@
         <div class="properties">
             <div class="card">
                 <div class="product_image">
-                    <img src="product_image/top-project1.jpg" alt="picture 1">
-                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <img src="/product_image/download1.jfif" alt="picture 1">
+                    <h3 class="line1">AAVAS</h3>
                     <div class="card_content">
-                        by Realty Guru<br>
-                        Defence Colony,New Delhi <br><br>
+                        by 99acres.com<br>
+                        dwarka sector 12 <br><br>
                         3.4 BHK Flats <br>
                         <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
-                            5.50 Cr </font>onwards
-                        Marketed by Dream Homes<br>
+                            4.0 cr </font>onwards
+                        Marketed by LOVELY HOMES<br>
                         <button class="view_flat_button">View Details</button>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="product_image">
-                    <img src="product_image/index.jpg" alt="picture 1">
-                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <img src="/product_image/download5.png" alt="picture 1">
+                    <h3 class="line1">NIKETAN</h3>
                     <div class="card_content">
-                        by Realty Guru<br>
+                        by GHAR DEKHO<br>
                         Defence Colony,New Delhi <br><br>
                         3.4 BHK Flats <br>
                         <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
                             5.50 Cr </font>onwards
-                        Marketed by Dream Homes<br>
+                        Marketed by LOVELY HOMES <br>
                         <button class="view_flat_button">View Details</button>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="product_image">
-                    <img src="product_image/top-project1.jpg" alt="picture 1">
-                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <img src="product_image/download3.jfif" alt="picture 1">
+                    <h3 class="line1">BEACH TREE COTTAGE</h3>
                     <div class="card_content">
-                        by Realty Guru<br>
-                        Defence Colony,New Delhi <br><br>
+                        by 99acres.com<br>
+                        patna bihar <br><br>
                         3.4 BHK Flats <br>
                         <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
                             5.50 Cr </font>onwards
-                        Marketed by Dream Homes<br>
+                        Marketed by lovely Homes<br>
                         <button class="view_flat_button">View Details</button>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="product_image">
-                    <img src="product_image/top-project1.jpg" alt="picture 1">
-                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <img src="product_image/download4.jfif" alt="picture 1">
+                    <h3 class="line1">ROSE COTTAGE</h3>
                     <div class="card_content">
-                        by Realty Guru<br>
-                        Defence Colony,New Delhi <br><br>
+                        by Ghardekho <br>
+                        Chandigarh,kharar <br><br>
                         3.4 BHK Flats <br>
                         <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
-                            5.50 Cr </font>onwards
-                        Marketed by Dream Homes<br>
+                            5.5 Cr </font>onwards
+                        Marketed by lovely Homes<br>
                         <button class="view_flat_button">View Details</button>
                     </div>
                 </div>
@@ -216,60 +224,60 @@
         <div class="properties">
             <div class="card">
                 <div class="product_image">
-                    <img src="product_image/top-project1.jpg" alt="picture 1">
-                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <img src="product_image/download6.jpg" alt="picture 1">
+                    <h3 class="line1">JANNAT</h3>
                     <div class="card_content">
-                        by Realty Guru<br>
-                        Defence Colony,New Delhi <br><br>
+                        by 99acres <br>
+                        sec 62 , greater noida <br><br>
                         3.4 BHK Flats <br>
                         <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
                             5.50 Cr </font>onwards
-                        Marketed by Dream Homes<br>
+                        Marketed by Lovely Homes<br>
                         <button class="view_flat_button">View Details</button>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="product_image">
-                    <img src="product_image/index.jpg" alt="picture 1">
-                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <img src="product_image/download7.jpg" alt="picture 1">
+                    <h3 class="line1">LION'S DEN</h3>
                     <div class="card_content">
-                        by Realty Guru<br>
-                        Defence Colony,New Delhi <br><br>
+                        by india property <br>
+                        mmohali,chandigarh <br><br>
                         3.4 BHK Flats <br>
                         <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
                             5.50 Cr </font>onwards
-                        Marketed by Dream Homes<br>
+                        Marketed by Lovely Homes<br>
                         <button class="view_flat_button">View Details</button>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="product_image">
-                    <img src="product_image/top-project1.jpg" alt="picture 1">
-                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <img src="product_image/download8.jpg" alt="picture 1">
+                    <h3 class="line1">LITTLE OAKS</h3>
                     <div class="card_content">
                         by Realty Guru<br>
-                        Defence Colony,New Delhi <br><br>
+                        Andheri west, Mumbai <br><br>
                         3.4 BHK Flats <br>
                         <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
                             5.50 Cr </font>onwards
-                        Marketed by Dream Homes<br>
+                        Marketed by Lovely Homes<br>
                         <button class="view_flat_button">View Details</button>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="product_image">
-                    <img src="product_image/top-project1.jpg" alt="picture 1">
-                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <img src="product_image/download9.jpg" alt="picture 1">
+                    <h3 class="line1">THE MEADOWS</h3>
                     <div class="card_content">
-                        by Realty Guru<br>
-                        Defence Colony,New Delhi <br><br>
+                        by Future homes<br>
+                        DLF phase1,Gurgaon <br><br>
                         3.4 BHK Flats <br>
                         <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
                             5.50 Cr </font>onwards
-                        Marketed by Dream Homes<br>
+                        Marketed by Lovely Homes<br>
                         <button class="view_flat_button">View Details</button>
                     </div>
                 </div>
@@ -279,55 +287,55 @@
         <div class="properties">
             <div class="card">
                 <div class="product_image">
-                    <img src="product_image/top-project1.jpg" alt="picture 1">
-                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <img src="product_image/download10.jpg" alt="picture 1">
+                    <h3 class="line1">FUTURE MANSION</h3>
                     <div class="card_content">
-                        by Realty Guru<br>
+                        by india property<br>
                         Defence Colony,New Delhi <br><br>
                         3.4 BHK Flats <br>
                         <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
                             5.50 Cr </font>onwards
-                        Marketed by Dream Homes<br>
+                        Marketed by Lovely Homes<br>
                         <button class="view_flat_button">View Details</button>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="product_image">
-                    <img src="product_image/top-project1.jpg" alt="picture 1">
-                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <img src="product_image/download11.jfif" alt="picture 1">
+                    <h3 class="line1">SHANTI AAVAS </h3>
                     <div class="card_content">
-                        by Realty Guru<br>
-                        Defence Colony,New Delhi <br><br>
+                        by 99acres<br>
+                        Dawarka,New Delhi <br><br>
                         3.4 BHK Flats <br>
                         <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
                             5.50 Cr </font>onwards
-                        Marketed by Dream Homes<br>
+                        Marketed by Lovely Homes<br>
                         <button class="view_flat_button">View Details</button>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="product_image">
-                    <img src="product_image/top-project1.jpg" alt="picture 1">
-                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <img src="product_image/download12.jpg" alt="picture 1">
+                    <h3 class="line1">aathiti</h3>
                     <div class="card_content">
-                        by Realty Guru<br>
-                        Defence Colony,New Delhi <br><br>
+                        by india property<br>
+                        seelampur,New Delhi <br><br>
                         3.4 BHK Flats <br>
                         <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
                             5.50 Cr </font>onwards
-                        Marketed by Dream Homes<br>
+                        Marketed by Lovely Homes<br>
                         <button class="view_flat_button">View Details</button>
                     </div>
                 </div>
             </div>
             <div class="card">
                 <div class="product_image">
-                    <img src="product_image/top-project1.jpg" alt="picture 1">
-                    <h3 class="line1">Build Wick Corner Home</h3>
+                    <img src="product_image/download13.jpg" alt="picture 1">
+                    <h3 class="line1">Build Wick Corner home</h3>
                     <div class="card_content">
-                        by Realty Guru<br>
+                        by 99acres<br>
                         Defence Colony,New Delhi <br><br>
                         3.4 BHK Flats <br>
                         <font style="font-weight: bold;color: black;font-family: 'Courier New', Courier, monospace;">
@@ -406,7 +414,7 @@
                     <div class="cit1_text_lower">
                         180000+ flats
                     </div>
-                </div>                
+                </div>
             </div>
             <div class="city1">
                 <img src="product_image/pune.jpg" alt="" width="50%" height="100%">
@@ -415,7 +423,7 @@
                     <div class="cit1_text_lower">
                         180000+ flats
                     </div>
-                </div>                
+                </div>
             </div>
             <div class="city1">
                 <img src="product_image/chennai.webp" alt="" width="50%" height="100%">
@@ -424,7 +432,7 @@
                     <div class="cit1_text_lower">
                         180000+ flats
                     </div>
-                </div>                
+                </div>
             </div>
             <div class="city1" style="margin-left: 20px;">
                 <img src="product_image/hydrabad.webp" alt="" width="50%" height="100%">
@@ -433,7 +441,7 @@
                     <div class="cit1_text_lower">
                         180000+ flats
                     </div>
-                </div>                
+                </div>
             </div>
             <div class="city1">
                 <img src="product_image/Kolkata.jpg" alt="" width="50%" height="100%">
@@ -442,7 +450,7 @@
                     <div class="cit1_text_lower">
                         180000+ flats
                     </div>
-                </div>                
+                </div>
             </div>
             <div class="city1">
                 <img src="product_image/patna.jpg" alt="" width="50%" height="100%">
@@ -451,7 +459,7 @@
                     <div class="cit1_text_lower">
                         180000+ flats
                     </div>
-                </div>                
+                </div>
             </div>
             <div class="city1">
                 <img src="product_image/aayodhya.jpg" alt="" width="50%" height="100%">
@@ -460,7 +468,7 @@
                     <div class="cit1_text_lower">
                         180000+ flats
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </div>
@@ -470,12 +478,12 @@
         <div class="about_us_left">
             <img src="about_us_image/logo.png" alt="" srcset="">
             <div class="about_us_left_content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam animi voluptas, optio, assumenda
-                praesentium laudantium nostrum minima fugiat doloremque culpa nobis labore eligendi debitis quos
-                possimus iusto sint nisi quia. Dolore aut quo laborum laudantium unde, modi ex quod explicabo totam
-                dolorem inventore, mollitia iusto! Earum aliquid architecto ipsam non minima facilis error ipsum sed
-                cum! Molestias, libero saepe non animi nemo porro est in atque fugit temporibus perspiciatis similique
-                tenetur, odit expedita perferendis omnis ducimus illo. Nemo, saepe nobis.
+                Lovely Homes is a full property service provider for all real estate needs. Our website is one of the
+                largest platform for buyers and sellers of property to connects in a easy manner, Lovely Home has an
+                active base of over 15 lakh property listings our wbsite provides 50+ services like home loans, pay
+                rent, packers and movers, legal assistance, property valuation and expert advice as well. We provide
+                least amount of commision from owr customer for any kind of property deals. You can directly interact
+                with the property owner just by fixing meeting through owr website.
             </div>
         </div>
         <div class="about_us_middle">

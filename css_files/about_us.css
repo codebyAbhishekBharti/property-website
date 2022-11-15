@@ -1,5 +1,4 @@
-
-.about_us{
+.about_us {
     margin-top: 50px;
     width: 85%;
     height: 400px;
@@ -7,24 +6,28 @@
     padding-top: 50px;
     padding-left: 15%;
 }
-.about_us_left{
+
+.about_us_left {
     float: left;
     width: 30%;
     height: 100%;
     background-color: #d8232a;
 }
-.about_us img{
+
+.about_us img {
     display: inline-block;
     background-color: #d8232a;
     height: 50px;
 }
-.about_us_left_content{
+
+.about_us_left_content {
     background-color: #d8232a;
     margin-top: 15px;
     font-family: 'Open Sans';
     color: white;
 }
-.about_us_middle{
+
+.about_us_middle {
     float: left;
     width: 20%;
     /* border: 2px solid black; */
@@ -34,30 +37,35 @@
     margin-right: 20px;
     padding-left: 80px;
 }
-.about_us_middle_a{
+
+.about_us_middle_a {
     background-color: #d8232a;
     margin-top: 15px;
     font-family: 'Open Sans';
     color: white;
     display: block;
 }
-.about_us_middle_a:hover{
+
+.about_us_middle_a:hover {
     color: black;
 }
-.about_us_right{
+
+.about_us_right {
     margin-top: 30px;
     float: left;
     background-color: #d8232a;
     /* border: 2px solid black; */
 }
-.about_us_head1{
+
+.about_us_head1 {
     background-color: #d8232a;
     font-family: 'Open Sans';
     color: white;
     font-size: 20px;
     font-weight: 600;
 }
-.about_us_head2{
+
+.about_us_head2 {
     margin-top: 25px;
     font-family: 'Open Sans';
     color: white;
@@ -65,7 +73,8 @@
     font-weight: 400;
     background-color: #d8232a;
 }
-.about_us_content1{
+
+.about_us_content1 {
     margin-top: 3px;
     color: white;
     padding-left: 30px;
@@ -73,18 +82,22 @@
     font-size: 20px;
     background-color: #d8232a;
 }
-.about_us_content2{
+
+.about_us_content2 {
     display: block;
     width: 100%;
     background-color: #d8232a;
 }
-.contact_image_link{
+
+.contact_image_link {
     background-color: #d8232a;
 }
-.contact_image_link a{
+
+.contact_image_link a {
     background-color: #d8232a;
 }
-.about_us_head2 img{
+
+.about_us_head2 img {
     background-color: #d8232a;
     width: 50px;
     height: auto;
