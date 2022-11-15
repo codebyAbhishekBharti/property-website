@@ -9,7 +9,8 @@
     height: 500px;
     width: 100%;
 }
-.contact_us_main_box_upper{
+
+.contact_us_main_box_upper {
     float: left;
     width: 90%;
     height: 555px;
@@ -17,6 +18,7 @@
     margin-top: -450px;
     /* background-color: aquamarine; */
 }
+
 .contact_block_main {
     float: left;
     /* margin-top: -450px; */
@@ -29,13 +31,15 @@
     border-radius: 10px;
     padding: 10px 25px 15px 25px;
 }
-.contact_image{
+
+.contact_image {
     display: flex;
     justify-content: center;
     /* margin-top: -550px; */
     /* margin-left: 37%; */
     /* margin-bottom: 200px; */
 }
+
 .contact_us_title {
     font-family: "Open Sans";
     font-size: 32px;
@@ -43,6 +47,7 @@
     margin-bottom: 10px;
 
 }
+
 .call_button {
     background-color: #d8232a;
     /* height: 50px; */
@@ -60,58 +65,68 @@
     /* color: red; */
     height: 40px;
 }
-.address_botton{
+
+.address_botton {
     display: block;
     margin-left: 10%;
     /* border: 1px solid black; */
     width: 90%;
 }
-.contact_us_main_box_lower{
+
+.contact_us_main_box_lower {
     /* background-color: aqua; */
     width: 90%;
     margin-left: 10%;
     height: 400px;
     margin-top: 150px;
 }
-.address_box_left{
+
+.address_box_left {
     float: left;
     /* background-color: bisque; */
     width: 40%;
     height: 100%;
 }
-.address_box_right{
+
+.address_box_right {
     float: left;
     /* background-color: blueviolet; */
     width: 60%;
     height: 100%;
 }
-.address_text{
+
+.address_text {
     /* background-color: aqua; */
     width: 38%;
     height: 100%;
     float: left;
 }
-.address_heading{
+
+.address_heading {
     display: flex;
     /* font-family: "Open Sans"; */
-    font-family: "Open Sans",Roboto-Regular, sans-serif;
+    font-family: "Open Sans", Roboto-Regular, sans-serif;
     font-size: 32px;
     font-weight: 600;
     /* margin-bottom: 10px; */
 }
-.address_content{
+
+.address_content {
     color: #666666;
     display: flex;
     margin-left: 10px;
-    font-family: "Open Sans",Roboto-Regular, sans-serif;;
+    font-family: "Open Sans", Roboto-Regular, sans-serif;
+    ;
     font-weight: 600;
 }
-.sec2{
+
+.sec2 {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: -3px;
 }
-.address_map{
+
+.address_map {
     /* background-color: blueviolet; */
     padding-left: 38%;
     width: auto;

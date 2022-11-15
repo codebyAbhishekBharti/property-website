@@ -1,20 +1,23 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-.sell_sec_1{
+
+.sell_sec_1 {
     float: left;
     margin-top: 20px;
     width: 65%;
     height: 100%;
 }
-.heading_1{
+
+.heading_1 {
     font-size: 32px;
     text-align: center;
     font-family: 'Open Sans';
     color: rgb(40, 37, 37);
     font-weight: 750;
 }
+
 .sell_sec_1 img {
     display: block;
     margin-left: auto;
@@ -22,13 +25,15 @@
     width: auto;
     height: 600px;
 }
-.sell_sec_2{
+
+.sell_sec_2 {
     float: left;
     margin-top: 40px;
     width: 35%;
     height: 100%;
 }
-.sec_2_container{
+
+.sec_2_container {
     margin-right: 50px;
     padding: 15px;
     border: 2px solid black;
@@ -36,19 +41,22 @@
     height: 570px;
     margin-bottom: 100px;
 }
-.cont1{
-    font-family: 'Noto Sans',sans-serif;
+
+.cont1 {
+    font-family: 'Noto Sans', sans-serif;
     font-size: 23px;
     font-weight: bolder;
     color: #d8232a;
 }
-.cont2{
-    font-family: 'Noto Sans',sans-serif;
+
+.cont2 {
+    font-family: 'Noto Sans', sans-serif;
     font-size: 14px;
     margin-top: 17px;
     font-weight: bold;
 }
-.cont3{
+
+.cont3 {
     display: inline-block;
     height: 30px;
     font-family: 'Open Sans';
@@ -62,10 +70,12 @@
     text-align: center;
     border: 1px solid black;
 }
-.cont3:hover{
+
+.cont3:hover {
     box-shadow: 5px 5px 10px rgb(219, 208, 208);
 }
-.loc1{
+
+.loc1 {
     display: inline-block;
     width: 95%;
     height: 50px;
@@ -75,44 +85,51 @@
     padding-left: 10px;
     font-size: 18px;
 }
-#sell_submit{
+
+#sell_submit {
     /* margin-top: 30px; */
     width: 95%;
     height: 50px;
     text-align: center;
-    font-family: 'Noto Sans',sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 24px;
     background-color: #d8232a;
     color: white;
     border-radius: 10px;
 }
-#sell_submit:hover{
+
+#sell_submit:hover {
     box-shadow: 5px 5px 10px rgb(219, 208, 208);
 }
-.how_it_works{
+
+.how_it_works {
     display: inline-block;
     margin-left: 20%;
     width: 60%;
     justify-content: center;
     align-items: center;
 }
-.heading2{
+
+.heading2 {
     text-align: center;
     font-family: 'Open Sans';
     font-size: 17px;
     font-weight: bold;
 }
-.part1{
+
+.part1 {
     margin-top: 50px;
     border: 1px solid white;
 }
-.part1 img{
+
+.part1 img {
     width: 333px;
     height: 207px;
     float: left;
     margin-right: 35px;
 }
-.heading3{
+
+.heading3 {
     margin-top: 50px;
     padding-left: 50px;
     color: #d8232a;
@@ -120,13 +137,14 @@
     font-size: 20px;
     font-weight: bolder;
 }
-.heading4{
+
+.heading4 {
     margin-top: 20px;
     color: #464646;
-    font-family: 'Noto Sans',sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-.about_us{
+.about_us {
     margin-top: 50px;
     width: 85%;
     height: 400px;
@@ -134,21 +152,25 @@
     padding-top: 50px;
     padding-left: 15%;
 }
-.about_us_left{
+
+.about_us_left {
     float: left;
     width: 30%;
     height: 100%;
 }
-.about_us img{
+
+.about_us img {
     display: inline-block;
     height: 50px;
 }
-.about_us_left_content{
+
+.about_us_left_content {
     margin-top: 15px;
     font-family: 'Open Sans';
     color: white;
 }
-.about_us_middle{
+
+.about_us_middle {
     float: left;
     width: 20%;
     /* border: 2px solid black; */
@@ -157,45 +179,53 @@
     margin-right: 20px;
     padding-left: 80px;
 }
-.about_us_middle_a{
+
+.about_us_middle_a {
     margin-top: 15px;
     font-family: 'Open Sans';
     color: white;
     display: block;
 }
-.about_us_middle_a:hover{
+
+.about_us_middle_a:hover {
     color: black;
 }
-.about_us_right{
+
+.about_us_right {
     margin-top: 30px;
     float: left;
     /* border: 2px solid black; */
 }
-.about_us_head1{
+
+.about_us_head1 {
     font-family: 'Open Sans';
     color: white;
     font-size: 20px;
     font-weight: 600;
 }
-.about_us_head2{
+
+.about_us_head2 {
     margin-top: 25px;
     font-family: 'Open Sans';
     color: white;
     font-size: 16px;
     font-weight: 400;
 }
-.about_us_content1{
+
+.about_us_content1 {
     margin-top: 3px;
     color: white;
     padding-left: 30px;
     font-family: 'Open Sans';
     font-size: 20px;
 }
-.about_us_content2{
+
+.about_us_content2 {
     display: block;
     width: 100%;
 }
-.about_us_head2 img{
+
+.about_us_head2 img {
     width: 50px;
     height: auto;
     margin-top: 10px;
