@@ -213,6 +213,10 @@
     margin-top: 10px;
 }
 
+.selected_flat:hover{
+    box-shadow: 5px 5px 10px rgb(219, 208, 208);
+}
+
 .selected_flat_up {
     display: flex;
     width: 100%;
@@ -271,11 +275,9 @@
     margin: 20px;
 }
 
-/* .product_image {
-    width: 295px;
-    
-    color: aqua;
-} */
+.card:hover{
+    box-shadow: 5px 5px 10px rgb(219, 208, 208);
+}
 
 .cont {
     width: 100%;
