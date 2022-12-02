@@ -27,7 +27,7 @@
         <a href="index.html"><img src="navbar/logo.png" alt="" srcset=""></a>
         <div id="navbar_cont1" class="navbar_content" style="margin-left: 25%;"
             onclick="window.location.href = 'buy_page.html';">Buy</div>
-        <div id="navbar_cont2" class="navbar_content">Rent</div>
+        <div id="navbar_cont2" class="navbar_content" onclick="window.location.href = 'rent_page.html';">Rent</div>
         <div id="navbar_cont3" class="navbar_content" onclick="window.location.href = 'sell_page.html';">Sell</div>
         <div id="navbar_cont4" class="navbar_content" onclick="window.location.href='contact_us.html'">Contact Us</div>
         <div id="navbar_cont5" class="navbar_content" onclick="login_page_opener()">Sign in</div>
@@ -96,18 +96,18 @@
             <form class="search_down">
                 <div class="location">
                     <img src="homepage_image/location.png" alt="" srcset="">
-                    <input id="id12" type="text" placeholder="Location">
+                    <input id="id12" type="text" name="location"  placeholder="Location" required>
                 </div>
                 <div class="flat_type">
                     <img src="homepage_image/home.png" alt="" srcset="">
-                    <input id="id13" type="text" placeholder="Flat">
+                    <input id="id13" type="text" name="flat" placeholder="Flat" required>
                 </div>
                 <div class="budget">
                     <img src="homepage_image/rupee.png" alt="" srcset="">
-                    <input id="id13" type="text" placeholder="Budget">
+                    <input id="id13" type="text" name="budget" placeholder="Budget" required>
                 </div>
                 <div class="search">
-                    <div class="search_box">
+                    <div class="search_box" onclick="javascript:document.forms[2].submit()">
                         <img src="homepage_image/search.png" alt="" srcset="">
                         Search
                     </div>

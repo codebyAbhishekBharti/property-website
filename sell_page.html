@@ -22,7 +22,7 @@
         <a href="index.html"><img src="navbar/logo.png" alt="" srcset=""></a>
         <div id="navbar_cont1" class="navbar_content" style="margin-left: 25%;"
             onclick="window.location.href = 'buy_page.html';">Buy</div>
-        <div id="navbar_cont2" class="navbar_content">Rent</div>
+        <div id="navbar_cont2" class="navbar_content" onclick="window.location.href = 'rent_page.html';">Rent</div>
         <div id="navbar_cont3" class="navbar_content" onclick="window.location.href = 'sell_page.html';">Sell</div>
         <div id="navbar_cont4" class="navbar_content" onclick="window.location.href='contact_us.html'">Contact Us</div>
         <div id="navbar_cont5" class="navbar_content" onclick="login_page_opener()">Sign in</div>
@@ -80,7 +80,7 @@
             <img src="sell_page_image/building_2.webp" alt="" srcset="">
         </div>
         <div class="sell_sec_2">
-            <div class="sec_2_container">
+            <form class="sec_2_container">
                 <p class="cont1">Post Your Property Here</p>
                 <p class="cont2">You are here to </p>
                 <p id="id1" class="cont3" onclick="func4()">Sell</p>
@@ -98,11 +98,11 @@
                     <p id="id11" class="cont3" onclick="func14()">Other types</p>
                 </div>
                 <p class="cont2">Location of building </p>
-                <input class="loc1" type="text" placeholder="Location">
+                <input class="loc1" type="text" name="location" placeholder="Location" required>
                 <p class="cont2" style="margin-top: -4px;">Your Contact Number</p>
-                <input class="loc1" type="text" placeholder="Contact Number">
+                <input class="loc1" type="text" name="contact_no" placeholder="Contact Number" required>
                 <button id="sell_submit">Post Property Now</button>
-            </div>
+            </form>
         </div>
         <div class="how_it_works">
             <div class="heading2">
